@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>B_S规则</title>
+	
+<!-- 核心文件、主题、全屏支持样式文件 -->
+<link href="codemirror/lib/codemirror.css" rel="stylesheet" type="text/css">
+<link href="codemirror/theme/monokai.css" rel="stylesheet" type="text/css">
+<link href="codemirror/addon/display/fullscreen.css" rel="stylesheet" type="text/css">
+	
+<!-- 引入CodeMirror核心文件 -->
+<script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
+
+<!-- CodeMirror支持不同语言，根据需要引入JS文件 -->
+<!-- 引入C/C++语言支持 -->
+<script type="text/javascript" src="codemirror/mode/clike/clike.js"></script>
+
+<!-- 下面分别为显示行数、括号匹配和全屏插件 -->
+<script type="text/javascript" src="codemirror/addon/selection/active-line.js"></script>
+<script type="text/javascript" src="codemirror/addon/edit/matchbrackets.js"></script>
+<script type="text/javascript" src="codemirror/addon/display/fullscreen.js"></script>
+	
+<style type="text/css">
+#title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#title h1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	line-height: 1px;
+}
+#content {
+	width: 80%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+}
+#yuan {
+	float: left;
+	margin-left: 120px;
+	margin-right: 180px;
+	margin-top: 0px;
+}
+#mgrid {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+</style>	
+
+<script language="javascript">
+	function change111(){
+		var td=document.getElementById("td111");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change112(){
+		var td=document.getElementById("td112");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change113(){
+		var td=document.getElementById("td113");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change121(){
+		var td=document.getElementById("td121");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change122(){
+		var td=document.getElementById("td122");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change123(){
+		var td=document.getElementById("td123");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change131(){
+		var td=document.getElementById("td131");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change132(){
+		var td=document.getElementById("td132");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change133(){
+		var td=document.getElementById("td133");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change211(){
+		var td=document.getElementById("td211");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change212(){
+		var td=document.getElementById("td212");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change213(){
+		var td=document.getElementById("td213");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change221(){
+		var td=document.getElementById("td221");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change222(){
+		var td=document.getElementById("td222");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change223(){
+		var td=document.getElementById("td223");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change231(){
+		var td=document.getElementById("td231");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change232(){
+		var td=document.getElementById("td232");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+	function change233(){
+		var td=document.getElementById("td233");
+		if(td.style.backgroundColor=="black")
+			td.style.backgroundColor = "white";
+		else
+			td.style.backgroundColor = "black";
+	}
+</script> 
+	
+</head>
+
+<body>
+	<div id="title">
+		<h1>Bx/Sy规则</h1>
+		<h1>——生与死的抉择</h1>
+	</div>
+	<div id="content">
+	  <p>最常见的细胞自动机，称为&ldquo;生命式自动机&rdquo;，只有两种状态，&ldquo;死亡&rdquo;和&ldquo;生存&rdquo;（在我们的算法中，就是0和1），应用于每个细胞的规则作为条件给出根据相邻活细胞的数量&ldquo;诞生&rdquo;或&ldquo;存活&rdquo;。这通常表示为&ldquo;Bx / Sy&rdquo;，其中x和y是单个数字的列表。此外，邻里的选择是八个最近的细胞（即，包括对角相邻的细胞）。</p>
+	  <p>在Bx/Sy规则中，B意为Born，即死亡状态细胞变化为存活状态的出生规则；S意为Survive，即存活状态细胞保持存活状态的存活规则。Bx表示死细胞周围存在x个存活邻居时，该死细胞出生变为存活状态；By表示活细胞周围存在y个存活邻居时，该活细胞继续保持存活（否则死亡）。其中，x、y均可以表示0~8范围内的一个或多个值。</p>
+	  <p>例如，B678/S345678表示，死细胞邻居为6，7，8个时存活，否则保持死亡；活细胞邻居为3，4，5，6，7或8个时保持存活，否则死亡。</p>
+		
+		<div id="mgrid">
+			<div id="yuan">
+<table width="90" border="2" cellspacing="0" cellpadding="30">
+  <tbody>
+    <tr>
+      <td id="td111" onClick="change111()"></td>
+      <td id="td112" onClick="change112()"></td>
+      <td id="td113" onClick="change113()"></td>
+    </tr>
+    <tr>
+      <td id="td121" onClick="change121()"></td>
+      <td id="td122" onClick="change122()"></td>
+      <td id="td123" onClick="change123()"></td>
+    </tr>
+    <tr>
+      <td id="td131" onClick="change131()"></td>
+      <td id="td132" onClick="change132()"></td>
+      <td id="td133" onClick="change133()"></td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+			<div id="hou">
+<table width="90" border="2" cellspacing="0" cellpadding="30">
+  <tbody>
+    <tr>
+      <td id="td211" onClick="change211()"></td>
+      <td id="td212" onClick="change212()"></td>
+      <td id="td213" onClick="change213()"></td>
+    </tr>
+    <tr>
+      <td id="td221" onClick="change221()"></td>
+      <td id="td222" onClick="change222()"></td>
+      <td id="td223" onClick="change223()"></td>
+    </tr>
+    <tr>
+      <td id="td231" onClick="change231()"></td>
+      <td id="td232" onClick="change232()"></td>
+      <td id="td233" onClick="change233()"></td>
+    </tr>
+  </tbody>
+</table>
+			</div>
+		</div>
+<!--
+<script type="text/javascript">
+    window.onload = function(){
+        var tds = document.getElementsByTagName("td");
+        var len = tds.length;
+        for(var i=0;i<len;i++){
+            tds[i].onclick = function(){
+				/*
+                for(var j=0;j<len;j++){
+                    divs[j].style.backgroundColor = "black";
+                }
+				*/
+				if(this.style.backgroundColor=="black")
+					this.style.backgroundColor = "white";
+				else
+					this.style.backgroundColor = "black";
+            };
+        }
+    };
+</script>
+//-->
+<textarea id="code" name="code">
+int countNeighbours(int map[50][50], int x, int y) {
+	int count = 0;
+	for (int i = -1; i < 2; i++) {
+		for (int j = -1; j < 2; j++) {
+			int neighbour_x = x + i;
+			int neighbour_y = y + j;
+			if (!(i == 0 && j == 0)) {           //本身不算邻居   
+				if (neighbour_x < 0 || neighbour_y < 0 || neighbour_x >= 50 || neighbour_y >= 50)
+					count++;                     //地图边缘视为存在邻居
+				else if (map[neighbour_x][neighbour_y] == 1)
+					count++;                     //邻居存在，计数器加一
+			}
+		}
+	}
+	return count;
+}
+</textarea>
+		
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,     // 显示行数
+        indentUnit: 4,         // 缩进单位为4
+        styleActiveLine: true, // 当前行背景高亮
+        matchBrackets: true,   // 括号匹配
+        mode: 'text/x-c++src', // 高亮代码模式 C++
+        lineWrapping: true,    // 自动换行
+        theme: 'monokai',      // 使用monokai模版
+    });
+    editor.setOption("extraKeys", {
+        // Tab键换成4个空格
+        Tab: function(cm) {
+            var spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
+            cm.replaceSelection(spaces);
+        },
+        // F11键切换全屏
+        "F11": function(cm) {
+            cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+        },
+        // Esc键退出全屏
+        "Esc": function(cm) {
+            if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+        }
+    });
+</script>
+	
+	</div>
+</body>
+</html>

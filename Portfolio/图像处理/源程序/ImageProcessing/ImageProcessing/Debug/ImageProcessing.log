@@ -1,0 +1,142 @@
+﻿  ImageProcessing.cpp
+  ImageProcessingView.cpp
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(272): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(335): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(336): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(411): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(400): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(401): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(463): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(488): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(489): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(490): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(502): warning C4018: “>=”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(511): warning C4018: “>=”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(520): warning C4018: “>=”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(542): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(543): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(544): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(448): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(577): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(586): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(591): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(596): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(568): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(569): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(575): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(630): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(620): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(621): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(628): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(674): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(731): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(660): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(723): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(727): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(770): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(776): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(777): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(778): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(761): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(762): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(768): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(810): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(801): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(802): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(808): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(851): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(841): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(842): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(849): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(903): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(912): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(917): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(922): warning C4244: “=”: 从“double”转换到“unsigned char”，可能丢失数据
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(893): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(894): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(901): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(954): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(945): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(946): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(952): warning C4101: “color”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1026): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1005): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1006): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1089): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1074): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1075): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1137): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1122): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1123): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1196): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1207): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1171): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1172): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1255): warning C4305: “初始化”: 从“double”到“float”截断
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1271): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1257): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1258): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1332): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1340): warning C4018: “>”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1316): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1317): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1327): warning C4101: “TG”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1327): warning C4101: “TB”: 未引用的局部变量
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1420): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1406): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1407): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1493): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1479): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1480): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1565): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1550): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1551): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1640): warning C4018: “<”: 有符号/无符号不匹配
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1630): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1631): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
+e:\visual studio\_vs pro\imageprocessing\imageprocessing\imageprocessingview.cpp(1638): warning C4101: “color”: 未引用的局部变量
+  正在生成代码...
+  ImageProcessing.vcxproj -> E:\Visual Studio\_VS Pro\ImageProcessing\Debug\ImageProcessing.exe

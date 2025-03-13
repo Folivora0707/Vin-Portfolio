@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>初始洞穴生成</title>
+
+<!-- 核心文件、主题、全屏支持样式文件 -->
+<link href="codemirror/lib/codemirror.css" rel="stylesheet" type="text/css">
+<link href="codemirror/theme/monokai.css" rel="stylesheet" type="text/css">
+<link href="codemirror/addon/display/fullscreen.css" rel="stylesheet" type="text/css">
+	
+<!-- 引入CodeMirror核心文件 -->
+<script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
+
+<!-- CodeMirror支持不同语言，根据需要引入JS文件 -->
+<!-- 引入C/C++语言支持 -->
+<script type="text/javascript" src="codemirror/mode/clike/clike.js"></script>
+
+<!-- 下面分别为显示行数、括号匹配和全屏插件 -->
+<script type="text/javascript" src="codemirror/addon/selection/active-line.js"></script>
+<script type="text/javascript" src="codemirror/addon/edit/matchbrackets.js"></script>
+<script type="text/javascript" src="codemirror/addon/display/fullscreen.js"></script>
+	
+<style type="text/css">
+#title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#title h1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	line-height: 1px;
+}
+#content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+</style>
+	
+</head>
+	
+<body>
+	
+	<div id="title">
+		<h1>初始洞穴生成</h1>
+		<h1>——二维码演变而来的洞穴</h1>
+	</div>
+	<div id="content">
+	  <p>洞穴由50×50的数组表示，1代表活细胞（墙壁），0代表死细胞（地面），2代表宝物。	  </p>
+	  <p>每个格子有百分之init_chance的几率为1，那么总体来看会有百分之init_chance的格子为1。</p>
+	  <p>&nbsp;</p>	
+	  <textarea id="code" name="code">
+void CImageDlg::OnClickedButtonInit()    
+{
+	// 初始化
+	srand((unsigned)time(NULL));
+	for (int i = 0; i < 50; i++) {
+		for (int j = 0; j < 50; j++) {
+			if (rand() % 100 < init_chance /* +abs(i-25)/5+abs(j-25)/5 */)
+		    //产生[0,100)随机整数，小于设定概率
+				mycave_arr[i][j] = 1;
+			else mycave_arr[i][j] = 0;
+		}
+	}
+
+	OnPaint();
+}
+		</textarea>
+		
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,     // 显示行数
+        indentUnit: 4,         // 缩进单位为4
+        styleActiveLine: true, // 当前行背景高亮
+        matchBrackets: true,   // 括号匹配
+        mode: 'text/x-c++src', // 高亮代码模式 C++
+        lineWrapping: true,    // 自动换行
+        theme: 'monokai',      // 使用monokai模版
+    });
+    editor.setOption("extraKeys", {
+        // Tab键换成4个空格
+        Tab: function(cm) {
+            var spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
+            cm.replaceSelection(spaces);
+        },
+        // F11键切换全屏
+        "F11": function(cm) {
+            cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+        },
+        // Esc键退出全屏
+        "Esc": function(cm) {
+            if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+        }
+    });
+</script>
+		
+	</div>
+</body>
+</html>

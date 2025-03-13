@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>洞穴更新</title>
+	
+<!-- 核心文件、主题、全屏支持样式文件 -->
+<link href="codemirror/lib/codemirror.css" rel="stylesheet" type="text/css">
+<link href="codemirror/theme/monokai.css" rel="stylesheet" type="text/css">
+<link href="codemirror/addon/display/fullscreen.css" rel="stylesheet" type="text/css">
+	
+<!-- 引入CodeMirror核心文件 -->
+<script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
+
+<!-- CodeMirror支持不同语言，根据需要引入JS文件 -->
+<!-- 引入C/C++语言支持 -->
+<script type="text/javascript" src="codemirror/mode/clike/clike.js"></script>
+
+<!-- 下面分别为显示行数、括号匹配和全屏插件 -->
+<script type="text/javascript" src="codemirror/addon/selection/active-line.js"></script>
+<script type="text/javascript" src="codemirror/addon/edit/matchbrackets.js"></script>
+<script type="text/javascript" src="codemirror/addon/display/fullscreen.js"></script>
+	
+<style type="text/css">
+#title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#title h1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	line-height: 1px;
+}
+#content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding-bottom: 40px;
+}
+</style>
+</head>
+
+<body>
+	<div id="title">
+		<h1>洞穴更新</h1>
+		<h1>——简单规则的神奇创造</h1>
+	</div>
+	<div id="content">
+	  <p>该洞穴生成算法中实际上用到的是B/S规则的变体，但总的来看，仍然是两个规则，那便是死细胞出生规则与活细胞消亡规则。</p>
+	  <p>活细胞规则为，活细胞的邻居数量小于deathLimit时死亡，否则继续存活；死细胞规则为，死细胞的邻居数量大于birthLimit时出生，否则保持死亡。本算法中宝藏细胞等效为死细胞。</p>
+	  <p>&nbsp; </p>
+	  <p>
+	    <textarea id="code" name="code">
+void CImageDlg::OnClickedButtonUpda()
+{
+	// 更新洞穴
+	int n = steps;
+	while (n--)
+	{
+		int **newcave = new int*[50];
+		for (int i = 0; i < 50; i++)
+			newcave[i] = new int[50];
+
+		for (int i = 0; i < 50; i++) {
+			for (int j = 0; j < 50; j++)
+				newcave[i][j] = 0;
+		}                                 //初始化新数组
+
+		for (int x = 0; x < 50; x++) {
+			for (int y = 0; y < 50; y++) {
+				int nbsnum = countNeighbours(mycave_arr, x, y);
+				if (mycave_arr[x][y] == 1) {            //墙体消亡为空地规则
+					if (nbsnum < death)
+						newcave[x][y] = 0;
+					else
+						newcave[x][y] = 1;
+				}
+				else if (mycave_arr[x][y] == 0) {       //空地生成墙体规则
+					if (nbsnum > birth)
+						newcave[x][y] = 1;
+					else
+						newcave[x][y] = 0;
+				}
+				else if (mycave_arr[x][y] == 2) {       //宝藏等效为空地
+					if (nbsnum > birth)
+						newcave[x][y] = 1;
+					else
+						newcave[x][y] = 0;
+				}
+			}
+		}
+		for (int i = 0; i < 50; i++) {
+			for (int j = 0; j < 50; j++) {
+				mycave_arr[i][j] = newcave[i][j];
+			}
+		}
+
+		for (int i = 0; i < 50; i++)
+			delete[] newcave[i];
+		delete[] newcave;
+	}
+
+	OnPaint();
+}
+		  </textarea>
+		  
+		  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        lineNumbers: true,     // 显示行数
+        indentUnit: 4,         // 缩进单位为4
+        styleActiveLine: true, // 当前行背景高亮
+        matchBrackets: true,   // 括号匹配
+        mode: 'text/x-c++src', // 高亮代码模式 C++
+        lineWrapping: true,    // 自动换行
+        theme: 'monokai',      // 使用monokai模版
+    });
+    editor.setOption("extraKeys", {
+        // Tab键换成4个空格
+        Tab: function(cm) {
+            var spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
+            cm.replaceSelection(spaces);
+        },
+        // F11键切换全屏
+        "F11": function(cm) {
+            cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+        },
+        // Esc键退出全屏
+        "Esc": function(cm) {
+            if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+        }
+    });
+          </script>
+	  </p>
+		
+	</div>
+</body>
+</html>

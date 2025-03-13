@@ -1,0 +1,17 @@
+﻿  stdafx.cpp
+  ClassView.cpp
+  dibapi.cpp
+e:\visual studio\_vs pro\imageshow\imageshow\dibapi.cpp(741): warning C4244: “=”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+e:\visual studio\_vs pro\imageshow\imageshow\dibapi.cpp(1205): warning C4244: “初始化”: 从“ULONGLONG”转换到“unsigned int”，可能丢失数据
+e:\visual studio\_vs pro\imageshow\imageshow\dibapi.cpp(1209): warning C4244: “参数”: 从“ULONGLONG”转换到“UINT”，可能丢失数据
+  FileView.cpp
+  ImageShow.cpp
+  ImageShowDoc.cpp
+  ImageShowView.cpp
+e:\visual studio\_vs pro\imageshow\imageshow\imageshowview.cpp(216): warning C4018: “<”: 有符号/无符号不匹配
+  MainFrm.cpp
+  OutputWnd.cpp
+  PropertiesWnd.cpp
+  ViewTree.cpp
+  正在生成代码...
+  ImageShow.vcxproj -> E:\Visual Studio\_VS Pro\ImageShow\Debug\ImageShow.exe

@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>细胞自动机</title>
+<style type="text/css">
+#title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#title h1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	line-height: 1px;
+}
+#content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+#pic {
+	padding-top: 50px;
+	padding-bottom: 180px;
+}
+#pw {
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+#zq {
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+#hd {
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+#fz {
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+#jiaob div {
+	text-align: center;
+}
+#jiaob {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 70px;
+}
+</style>
+</head>
+
+<body>
+<div id="title">
+  <h1>细胞自动机</h1>
+  <h1>——能够赋予程序生命的算法</h1>
+</div>
+<div id="content">
+  <p><strong>兰顿认为，生命的本质不在具体的物质，而在物质的组织形式。这种组织原则完全可以用算法或程序的形式表达出来。所以，只要能将物质按照正确的形式构筑起来，那么这个新的系统就可以表现出生命。</strong></p>
+  <p><strong>&ldquo;生命系统的演化过程，是一个可以从任何特殊媒介物中抽象出来的过程&rdquo;</strong>（约翰·冯·诺伊曼）。</p>
+  <p><strong>人工生命算法</strong>包括进化计算、进化算法（EA）、遗传算法（GA）、遗传编程（GP）、群体智能（SI）、蚁群优化（ACO）、人工化学（AC）、智能体基模型和细胞自动机（CA）。</p>
+  <p><strong>细胞自动机</strong>（英语：<span lang="en">Cellular automaton</span>），又称<strong>格状自动机</strong>、<strong>元胞自动机</strong>，是一种离散模型，在可计算性理论、数学及理论生物学都有相关研究。它是由无限个有规律、坚硬的方格组成，每格均处于一种有限状态。整个格网可以是任何有限维的。同时也是离散的。每格于t时的态由t-1时的一集有限格（这集叫那格的邻域）的态决定。每一格的&ldquo;邻居&rdquo;都是已被固定的。（一格可以是自己的邻居。）每次演进时，每格均遵从同一规矩一齐演进。</p>
+  <p>就形式而言，细胞自动机有三个特征：</p>
+  <ul>
+    <li>平行计算（parallel computation）：每一个细胞个体都同时同步的改变</li>
+    <li>局部的（local）：细胞的状态变化只受周遭细胞的影响。</li>
+    <li>一致性的（homogeneous）：所有细胞均受同样的规则所支配</li>
+  </ul>
+	<p>史蒂芬·沃尔夫勒姆（Stephen Wolfram）对初等元胞机256种规则所产生的模型进行了深入研究，并用熵来描述其演化行为，将细胞自动机分为<strong>平稳型、周期型、混沌型和复杂型。</strong></p>
+  <div id="pic">
+		<div id="pw">
+		  <p><img src="images/1.gif" width="96" height="96" alt=""/></p>
+		  <p>平稳型</p>
+      </div>
+		<div id="zq">
+		  <p><img src="images/2.gif" width="96" height="96" alt=""/></p>
+		  <p>周期型</p>
+		</div>
+		<div id="hd">
+		  <p><img src="images/3.gif" width="96" height="96" alt=""/></p>
+		  <p>混沌型</p>
+		</div>
+		<div id="fz">
+		  <p><img src="images/4.gif" width="96" height="96" alt=""/></p>
+		  <p>复杂型</p>
+		</div>
+	</div>
+</div>
+	<div id="jiaob">
+		    <div>
+  Generating Caves With Cellular Automata<br>
+    <form>
+  <input type='button' onClick='recreate(this.form)' value='New World'>
+      <input type='button' onClick='iterate()' value='doSimulationStep()'>
+      <input type='button' onClick='placeTreasure()' value='placeTreasure()'>
+      <br>
+      Birth Limit: <input type="number" name="birthLimit" min="1" max="6" value="4">
+          Death Limit: <input type="number" name="deathLimit" min="1" max="6" value="3"><br>
+          Initial Chance: <input type="number" name="initialChance" min="0" max="1" step="0.1" value="0.4">
+          Number Of Steps: <input type="number" name="numSteps" min="0" max="6" value="2"></form><br><br>
+</div>
+
+<div><canvas id="gameCanvas"></canvas></div>
+
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+// Cave Generator With Cellular Automata
+// Gamedevtuts+ Tutorial Code
+// Code partly by Michael Cook - @mtrc on Twitter
+// With thanks to Christer Kaitilia - @mcfunkypants!
+// Read the full tutorial:
+// http://gamedev.tutsplus.com/tutorials/implementation/cave-levels-cellular-automata
+
+// Permission is granted to use this source in any
+// way you like, commercial or otherwise. Enjoy!
+
+// the world grid: a 2d array of tiles
+var world = [[]];
+
+// size in the world in sprite tiles
+var worldWidth = 48;
+var worldHeight = 48;
+
+// size of a tile in pixels (this is only important for drawing)
+var tileWidth = 8;
+var tileHeight = 8;
+
+/*
+Variables we can use to tweak our demo!
+*/
+var chanceToStartAlive = 0.4;
+var deathLimit = 3;
+var birthLimit = 4;
+var numberOfSteps = 2;
+
+//This is called right at the start when the page loads
+function onload() 
+{
+  //HTML5 stuff
+  canvas = document.getElementById('gameCanvas');
+  canvas.width = worldWidth * tileWidth;
+  canvas.height = worldHeight * tileHeight;
+  ctx = canvas.getContext("2d");
+  //Make the world map!
+  world = generateMap();
+  redraw();
+}
+
+//This is called whenever you press the 'doSimulationStep' button
+function iterate()
+{
+    world = doSimulationStep(world);
+    redraw();
+}
+
+//Used to create a new world - it grabs the values from
+//the HTML form so you can affect the world gen :)
+function recreate(form)
+{
+  birthLimit = form.birthLimit.value;
+  deathLimit = form.deathLimit.value;
+  chanceToStartAlive = form.initialChance.value;
+  numberOfSteps = form.numSteps.value;
+    
+  world = generateMap();
+  redraw();
+}
+
+function generateMap()
+{
+    //So, first we make the map
+    var map = [[]];
+    //And randomly scatter solid blocks
+    initialiseMap(map);
+    
+    //Then, for a number of steps
+    for(var i=0; i<numberOfSteps; i++){
+        //We apply our simulation rules!
+        map = doSimulationStep(map);
+    }
+    
+    //And we're done!
+    return map;
+}
+
+function initialiseMap(map)
+{
+  for (var x=0; x < worldWidth; x++)
+  {
+    map[x] = [];
+    for (var y=0; y < worldHeight; y++)
+    {
+      map[x][y] = 0;
+    }
+  }
+  
+  for (var x=0; x < worldWidth; x++)
+  {
+    for (var y=0; y < worldHeight; y++)
+    {
+      //Here we use our chanceToStartAlive variable
+      if (Math.random() < chanceToStartAlive)
+        //We're using numbers, not booleans, to decide if something is solid here. 0 = not solid
+        map[x][y] = 1;
+    }
+  }
+  
+  return map;
+}
+
+function doSimulationStep(map)
+{
+    //Here's the new map we're going to copy our data into
+    var newmap = [[]];
+    for(var x = 0; x < map.length; x++){
+        newmap[x] = [];
+        for(var y = 0; y < map[0].length; y++)
+        {    
+            //Count up the neighbours
+            var nbs = countAliveNeighbours(map, x, y);
+            //If the tile is currently solid
+            if(map[x][y] > 0){
+                //See if it should die
+                if(nbs < deathLimit){
+                    newmap[x][y] = 0;
+                }
+                //Otherwise keep it solid
+                else{
+                    newmap[x][y] = 1;   
+                }
+            }
+            //If the tile is currently empty
+            else{
+                //See if it should become solid
+                if(nbs > birthLimit){
+                    newmap[x][y] = 1;       
+                }
+                else{
+                    newmap[x][y] = 0;      
+                }
+            }
+        }
+    }
+    
+    return newmap;
+}
+
+//This function counts the number of solid neighbours a tile has
+function countAliveNeighbours(map, x, y)
+{
+    var count = 0;
+    for(var i = -1; i < 2; i++){
+        for(var j = -1; j < 2; j++){
+            var nb_x = i+x;
+            var nb_y = j+y;
+            if(i == 0 && j == 0){
+            }
+            //If it's at the edges, consider it to be solid (you can try removing the count = count + 1)
+            else if(nb_x < 0 || nb_y < 0 ||
+                    nb_x >= map.length ||
+                    nb_y >= map[0].length){
+                count = count + 1;   
+            }
+            else if(map[nb_x][nb_y] == 1){
+                count = count + 1;
+            }
+        }
+    }
+    return count;
+}
+
+/*
+Extra credit assignment! Let's loop through the
+map and place treasure in the nooks and crannies.
+*/
+function placeTreasure()
+{
+  //How hidden does a spot need to be for treasure?
+  //I find 5 or 6 is good. 6 for very rare treasure.
+  var treasureHiddenLimit = 5;
+  for (var x=0; x < worldWidth; x++)
+  {
+    for (var y=0; y < worldHeight; y++)
+    {
+        if(world[x][y] == 0){
+          var nbs = countAliveNeighbours(world, x, y);
+          if(nbs >= treasureHiddenLimit){
+            world[x][y] = 2;
+          }
+        }
+    }
+  }   
+  redraw();
+}
+
+function redraw() 
+{
+  // clear the screen
+  ctx.fillStyle = '#000000';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  for (var x=0; x < worldWidth; x++)
+  {
+    for (var y=0; y < worldHeight; y++)
+    {
+
+      //I chose some nice colours from colourlovers.com
+      if(world[x][y] == 0)
+          ctx.fillStyle="#3355AA";
+      //The colour of treasure!
+      else if(world[x][y] == 2)
+          ctx.fillStyle="#F1D437";
+      else
+          ctx.fillStyle="#443333";
+        
+      ctx.fillRect(x*tileWidth, y*tileHeight,
+                    tileWidth, tileHeight);
+      
+    }
+  }
+}
+
+// the game's canvas element
+var canvas = null;
+// the canvas 2d context
+var ctx = null;
+
+// ensure that concole.log doesn't cause errors
+if (typeof console == "undefined") var console = { log: function() {} };
+
+// start running immediately
+onload();
+//]]>  
+
+</script>
+</div>
+</body>
+</html>
